@@ -4,10 +4,10 @@ public class Car {
 
     private String brand;
     private String model;
-    private String price;
+    private int price;
     private String color;
 
-    public Car(String brand, String model, String price, String color) {
+    public Car(String brand, String model, int price, String color) {
         this.brand = brand;
         this.model = model;
         this.price = price;
@@ -30,11 +30,11 @@ public class Car {
         this.model = model;
     }
 
-    public String getPrice() {
+    public int getPrice() {
         return price;
     }
 
-    public void setPrice(String price) {
+    public void setPrice(int price) {
         this.price = price;
     }
 
@@ -51,7 +51,7 @@ public class Car {
         return "Car{" +
                 "brand='" + brand + '\'' +
                 ", model='" + model + '\'' +
-                ", price='" + price + '\'' +
+                ", price=" + price + '\'' +
                 ", color='" + color + '\'' +
                 '}';
     }

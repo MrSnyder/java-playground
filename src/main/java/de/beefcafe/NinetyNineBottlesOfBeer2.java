@@ -1,4 +1,4 @@
-package de.beefcafe.beer;
+package de.beefcafe;
 
 public class NinetyNineBottlesOfBeer2 {
 

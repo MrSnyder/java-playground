@@ -16,9 +16,9 @@ public class CarReaderCsv implements CarReader {
         BufferedReader reader = new BufferedReader(new InputStreamReader(is));
         String line = null;
         try {
-            line = reader.readLine();
-            // skip first line
             reader.readLine();
+            // skip first line
+            line = reader.readLine();
             while (line != null) {
                 cars.add(readCar(line));
                 line = reader.readLine();
@@ -29,10 +29,10 @@ public class CarReaderCsv implements CarReader {
         return cars;
     }
 
-    private Car readCar(String line) {
-        String[] fields = line.split(",");
+    public Car readCar(String line) {
         // VW,Golf GTI V,50000,red
-        return new Car(fields[0], fields[1], fields[2], fields[3]);
+        String[] fields = line.split(",");
+        return new Car(fields[0], fields[1], Integer.parseInt(fields[2]), fields[3]);
     }
 
 }

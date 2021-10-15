@@ -7,6 +7,10 @@ public class Car {
     private int price;
     private String color;
 
+    public Car() {
+        // default constructor: required for Jackson
+    }
+
     public Car(String brand, String model, int price, String color) {
         this.brand = brand;
         this.model = model;

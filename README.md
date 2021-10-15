@@ -35,6 +35,7 @@ int pages
 
 ## Lesson 3
 
+* Mavenize java-playground
 * Abstraction: CarReader um CarReaderJson erweitern
 * https://www.baeldung.com/java-json
 

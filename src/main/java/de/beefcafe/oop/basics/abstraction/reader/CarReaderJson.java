@@ -1,6 +1,7 @@
-package de.beefcafe.oop.basics.abstraction;
+package de.beefcafe.oop.basics.abstraction.reader;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import de.beefcafe.oop.basics.abstraction.Car;
 
 import java.io.IOException;
 import java.io.InputStream;

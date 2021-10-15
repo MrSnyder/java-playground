@@ -1,4 +1,6 @@
-package de.beefcafe.oop.basics.abstraction;
+package de.beefcafe.oop.basics.abstraction.reader;
+
+import de.beefcafe.oop.basics.abstraction.Car;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -2,8 +2,10 @@ package de.beefcafe.concurrency;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         for (int i = 0; i < 4; i++) {
+
+            // manual Thread creation
             new Thread(new Runnable() {
                 @Override
                 public void run() {
@@ -11,6 +13,8 @@ public class Main {
                     UnsafeSingleton.getInstance();
                 }
             }).start();
+
+            // Threadpools
         }
     }
 }

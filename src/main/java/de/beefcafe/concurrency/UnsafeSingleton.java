@@ -2,13 +2,13 @@ package de.beefcafe.concurrency;
 
 public class UnsafeSingleton {
 
-    private static UnsafeSingleton instance;
+    private static volatile UnsafeSingleton instance;
 
     private UnsafeSingleton() {
         System.out.println("New Singleton instance created: " + this);
     }
 
-    public static UnsafeSingleton getInstance() {
+    public static synchronized UnsafeSingleton getInstance() {
         if (instance == null) {
             instance = new UnsafeSingleton();
         } else {

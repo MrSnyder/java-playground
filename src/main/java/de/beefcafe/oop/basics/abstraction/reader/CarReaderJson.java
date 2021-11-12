@@ -15,6 +15,7 @@ public class CarReaderJson implements CarReader {
     public List<Car> readCars() {
         Configuration config = Configuration.getInstance();
         System.out.println("B: " + config);
+        // using same instance is ok, because ObjectMapper is thread-safe
         ObjectMapper mapper = config.getObjectMapper();
         InputStream is = CarReaderCsv.class.getResourceAsStream("cars.json");
         try {
